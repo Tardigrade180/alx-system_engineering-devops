@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1Ap | sed -E ':a;N;$!ba;s/\n/,/g;s/[^[:alnum:],.\/]/_/g'
